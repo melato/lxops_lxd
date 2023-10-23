@@ -424,6 +424,6 @@ func (t *InstanceServer) ExportImage(image string, path string) error {
 
 func (t *InstanceServer) ImportImage(image string, path string) error {
 	s := &script.Script{Trace: Trace}
-	s.Run("lxd", "image", "import", path, "--alias="+image)
+	s.Run("lxc", "image", "import", path, "--alias="+image)
 	return s.Error()
 }
