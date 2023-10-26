@@ -18,6 +18,7 @@ var version string
 
 func main() {
 	lxops.InitOSTypes()
+	lxops.InitConfigTypes()
 	client := &lxdutil.LxdClient{}
 	cmd := lxops.RootCommand(client)
 	templateOps := &lxdutil.TemplateOps{Client: client}
