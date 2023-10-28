@@ -1,18 +1,12 @@
 module melato.org/lxops_lxd
 
-go 1.18
-
-replace (
-	melato.org/cloudconfig => ../cloudconfig
-	melato.org/cloudconfiglxd => ../cloudconfiglxd
-	melato.org/lxops => ../lxops
-)
+go 1.20
 
 require (
-	github.com/canonical/lxd v0.0.0-20231018120509-69b6b09a607c
-	melato.org/cloudconfiglxd v0.0.0-00010101000000-000000000000
+	github.com/canonical/lxd v0.0.0-20230921091703-d7c2a5113344
+	melato.org/cloudconfiglxd v0.1.0
 	melato.org/command v1.0.1
-	melato.org/lxops v0.0.0-00010101000000-000000000000
+	melato.org/lxops v0.0.0-20231028201753-d961ddfe3aac
 	melato.org/script v1.0.0
 )
 
@@ -40,11 +34,11 @@ require (
 	github.com/rogpeppe/fastuuid v1.2.0 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/zitadel/oidc/v2 v2.8.3 // indirect
-	golang.org/x/crypto v0.14.0 // indirect
-	golang.org/x/net v0.17.0 // indirect
-	golang.org/x/oauth2 v0.13.0 // indirect
-	golang.org/x/sys v0.13.0 // indirect
-	golang.org/x/term v0.13.0 // indirect
+	golang.org/x/crypto v0.13.0 // indirect
+	golang.org/x/net v0.15.0 // indirect
+	golang.org/x/oauth2 v0.12.0 // indirect
+	golang.org/x/sys v0.12.0 // indirect
+	golang.org/x/term v0.12.0 // indirect
 	golang.org/x/text v0.13.0 // indirect
 	google.golang.org/appengine v1.6.8 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
@@ -55,6 +49,6 @@ require (
 	gopkg.in/retry.v1 v1.0.3 // indirect
 	gopkg.in/square/go-jose.v2 v2.6.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
-	melato.org/cloudconfig v0.0.0-20230426173728-bf10961073ff // indirect
+	melato.org/cloudconfig v0.3.0 // indirect
 	melato.org/table3 v0.0.0-20220501091508-83fb75c200b0 // indirect
 )
