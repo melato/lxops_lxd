@@ -13,8 +13,8 @@ import (
 //go:embed usage.yaml
 var usageData []byte
 
-//go:embed version
-var version string
+// set with -ldflags "-X 'main.version=...'"
+var version = "dev"
 
 func main() {
 	lxops.InitOSTypes()
