@@ -6,7 +6,7 @@ require (
 	github.com/canonical/lxd v0.0.0-20230921091703-d7c2a5113344
 	melato.org/cloudconfiglxd v0.1.0
 	melato.org/command v1.0.1
-	melato.org/lxops v0.1.1
+	melato.org/lxops v0.2.0
 	melato.org/script v1.0.0
 )
 
