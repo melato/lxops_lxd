@@ -170,3 +170,7 @@ func (t *LxdClient) ProjectInstanceServer(project string) (srv.InstanceServer, e
 	}
 	return &InstanceServer{Server: server}, nil
 }
+
+func (t *LxdClient) Servertype() string {
+	return "LXD"
+}

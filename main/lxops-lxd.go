@@ -21,7 +21,9 @@ func main() {
 	lxops.InitConfigTypes()
 	client := &lxdutil.LxdClient{}
 	cmd := lxops.RootCommand(client)
-	cmd.Command("version").NoConfig().RunMethod(func() { fmt.Println(version) })
+	cmd.Command("version").NoConfig().RunMethod(func() {
+		fmt.Printf("lxops for %s, %s\n", client.ServerType(), version)
+	})
 	usage.Apply(cmd, usageData)
 	command.Main(cmd)
 }
