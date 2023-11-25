@@ -5,7 +5,6 @@ import (
 	"strings"
 
 	"github.com/canonical/lxd/shared/api"
-	"melato.org/cloudconfiglxd"
 	"melato.org/lxops/srv"
 	"melato.org/lxops/yaml"
 	"melato.org/script"
@@ -145,7 +144,7 @@ func (t *InstanceServer) CopyInstance(cp *srv.Copy) error {
 }
 
 func (t *InstanceServer) NewConfigurer(instance string) (srv.InstanceConfigurer, error) {
-	return cloudconfiglxd.NewInstanceConfigurer(t.Server, instance), nil
+	return NewInstanceConfigurer(t.Server, instance), nil
 }
 
 func (t *InstanceServer) GetInstanceProfiles(name string) ([]string, error) {
