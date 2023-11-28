@@ -7,7 +7,7 @@ replace melato.org/lxops => ../lxops
 require (
 	github.com/canonical/lxd v0.0.0-20230921091703-d7c2a5113344
 	melato.org/command v1.0.1
-	melato.org/lxops v0.3.2-0.20231127190915-54b1887e5e79
+	melato.org/lxops v0.3.2-0.20231128180655-9a84e7a6dd7f
 	melato.org/script v1.0.0
 )
 
